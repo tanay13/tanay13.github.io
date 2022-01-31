@@ -7,7 +7,7 @@ const header = {
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Tanay Raj',
-  role: 'Full Stack Developer | Backend Developer',
+  role: 'Full Stack | Backend Developer',
   resume:
     'https://drive.google.com/file/d/1poaLh1vg8g4LNFVZ7_wQkMWGFVOzkZnE/view?usp=sharing',
   social: {
