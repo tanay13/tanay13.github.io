@@ -9,7 +9,7 @@ const about = {
   name: 'Tanay Raj',
   role: 'Full Stack | Backend Developer',
   resume:
-    'https://drive.google.com/file/d/1poaLh1vg8g4LNFVZ7_wQkMWGFVOzkZnE/view?usp=sharing',
+    'https://drive.google.com/file/d/1TaBTNuW5u8dJat3xm5B_kf4XtGaM3CXD/view?usp=sharing',
   social: {
     linkedin: 'https://linkedin.com/in/tanay-raj',
     github: 'https://github.com/tanay13',
@@ -20,6 +20,13 @@ const about = {
 const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
+  {
+    name: 'Codetropy',
+    description:
+      'A set of microservices for watching over a project in order to avoid plagiarism by copying huge chunks of codes in any short format coding competition/hackathons.Comprises of 3 components:- npm package, codetropy-server and codetropy-dashboard',
+    stack: ['React', 'Typescript', 'Redis'],
+    sourceCode: 'https://github.com/tanay13/codetropy',
+  },
   {
     name: 'Synced-up',
     description:
