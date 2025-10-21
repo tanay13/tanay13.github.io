@@ -7,7 +7,7 @@ const header = {
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Tanay Raj',
-  role: 'Computer Scientist | Systems Enthusiast',
+  role: 'Backend Developer | Systems Enthusiast',
   resume:
     'https://drive.google.com/file/d/1nThWhmMHJQC9VvTW9dOjjYUZd9zGyuqI/view?usp=sharing',
   social: {
@@ -38,26 +38,19 @@ const projects = [
       ' A platform to watch youtube or custom uploaded videos in sync with others. Feature to create a room and invite others in to enjoy waatching videos together without any disturbance.',
     stack: ['NodeJs', 'MongoDB', 'Socket Programming'],
     sourceCode: 'https://github.com/tanay13/synced-up',
-  },
-  {
-    name: 'Github-Notifier',
-    description:
-      ' Chrome extension for open source enthusiasts.Get notified when any new issues or PR is opened in the specified repositories.',
-    stack: ['Javascript', 'Chrome Storage API', 'Github API'],
-    sourceCode: 'https://github.com/tanay13/github-notifier',
   }
 ]
 
 const blogs = [
 
-  {
-    title: 'Getting Started with Web Development',
-    description: 'A beginner-friendly guide to web development covering HTML, CSS, and JavaScript fundamentals.',
-    url: '/blog/getting-started-web-development',
-    date: '2024-01-20',
-    platform: 'Personal Blog',
-    isExternal: false
-  },
+  // {
+  //   title: 'Getting Started with Web Development',
+  //   description: 'A beginner-friendly guide to web development covering HTML, CSS, and JavaScript fundamentals.',
+  //   url: '/blog/getting-started-web-development',
+  //   date: '2024-01-20',
+  //   platform: 'Personal Blog',
+  //   isExternal: false
+  // },
   {
     title: 'Understanding SIMD: Guide to Vectorized Computing',
     description: 'A guide to SIMD (Single Instruction, Multiple Data) programming for faster computation.',
