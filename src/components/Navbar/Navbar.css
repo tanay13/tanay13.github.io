@@ -10,9 +10,7 @@
   display: none;
 }
 
-.nav__theme {
-  margin-top: 0.4em;
-}
+/* theme toggle removed */
 
 @media (max-width: 600px) {
   .nav__list {

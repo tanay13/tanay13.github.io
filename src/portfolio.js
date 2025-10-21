@@ -7,9 +7,9 @@ const header = {
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Tanay Raj',
-  role: 'Full Stack | Backend Developer',
+  role: 'Computer Scientist | Systems Enthusiast',
   resume:
-    'https://drive.google.com/file/d/1TaBTNuW5u8dJat3xm5B_kf4XtGaM3CXD/view?usp=sharing',
+    'https://drive.google.com/file/d/1nThWhmMHJQC9VvTW9dOjjYUZd9zGyuqI/view?usp=sharing',
   social: {
     linkedin: 'https://linkedin.com/in/tanay-raj',
     github: 'https://github.com/tanay13',
@@ -18,8 +18,13 @@ const about = {
 }
 
 const projects = [
-  // projects can be added an removed
-  // if there are no projects, Projects section won't show up
+  {
+    name: 'Glitch Mesh',
+    description:
+      'Lightweight, developer-focused proxy tool designed for testing microservice resilience.',
+    stack: ['Golang', 'YAML', 'Networking'],
+    sourceCode: 'https://github.com/tanay13/GlitchMesh',
+  },
   {
     name: 'Codetropy',
     description:
@@ -31,7 +36,7 @@ const projects = [
     name: 'Synced-up',
     description:
       ' A platform to watch youtube or custom uploaded videos in sync with others. Feature to create a room and invite others in to enjoy waatching videos together without any disturbance.',
-    stack: ['NodeJs', 'MongoDB', 'Socket.io', 'Youtube API'],
+    stack: ['NodeJs', 'MongoDB', 'Socket Programming'],
     sourceCode: 'https://github.com/tanay13/synced-up',
   },
   {
@@ -40,37 +45,27 @@ const projects = [
       ' Chrome extension for open source enthusiasts.Get notified when any new issues or PR is opened in the specified repositories.',
     stack: ['Javascript', 'Chrome Storage API', 'Github API'],
     sourceCode: 'https://github.com/tanay13/github-notifier',
-  },
-  {
-    name: 'DoorBot',
-    description:
-      ' A platform for local service providers to list their shop or whatever service they provide. It provides an opportunity for the local service providers to work even during the pandemic.',
-    stack: ['NodeJS', 'REST API', 'HTML', 'CSS', 'PassportJS'],
-    sourceCode: 'https://github.com/tanay13/door-bot',
-  },
-  {
-    name: 'Token Farm',
-    description:
-      ' A Decentralized Dummy Finance Application. Built on local Ethereum network which return Dapp Tokens in return of Dai tokens.',
-    stack: ['Solidity', 'Javascript', 'Etheruem', 'Ganache', 'truffle'],
-    sourceCode: 'https://github.com/tanay13/token-farm',
-  },
+  }
 ]
 
-const skills = [
-  // skills can be added or removed
-  // if there are no skills, Skills section won't show up
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'TypeScript',
-  'React',
-  'GraphQL',
-  'MongoDB',
-  'Postgres',
-  'Material UI',
-  'Git',
-  'Docker',
+const blogs = [
+
+  {
+    title: 'Getting Started with Web Development',
+    description: 'A beginner-friendly guide to web development covering HTML, CSS, and JavaScript fundamentals.',
+    url: '/blog/getting-started-web-development',
+    date: '2024-01-20',
+    platform: 'Personal Blog',
+    isExternal: false
+  },
+  {
+    title: 'Understanding SIMD: Guide to Vectorized Computing',
+    description: 'A guide to SIMD (Single Instruction, Multiple Data) programming for faster computation.',
+    url: 'https://baremetalbytes.hashnode.dev/understanding-simd-guide-to-vectorized-computing',
+    date: '2024-03-04',
+    platform: 'Hashnode',
+    isExternal: true
+  },
 ]
 
 const contact = {
@@ -78,4 +73,4 @@ const contact = {
   email: 'tanay.raj76@gmail.com',
 }
 
-export { header, about, projects, skills, contact }
+export { header, about, projects, blogs, contact }

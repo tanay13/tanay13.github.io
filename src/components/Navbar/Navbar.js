@@ -1,14 +1,12 @@
 import { useContext, useState } from 'react'
-import Brightness2Icon from '@material-ui/icons/Brightness2'
-import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded'
 import MenuIcon from '@material-ui/icons/Menu'
 import CloseIcon from '@material-ui/icons/Close'
 import { ThemeContext } from '../../contexts/theme'
-import { projects, skills, contact } from '../../portfolio'
+import { projects, blogs, contact } from '../../portfolio'
 import './Navbar.css'
 
 const Navbar = () => {
-  const [{ themeName, toggleTheme }] = useContext(ThemeContext)
+  const [{ themeName }] = useContext(ThemeContext)
   const [showNavList, setShowNavList] = useState(false)
 
   const toggleNavList = () => setShowNavList(!showNavList)
@@ -31,14 +29,14 @@ const Navbar = () => {
           </li>
         ) : null}
 
-        {skills.length ? (
+        {blogs.length ? (
           <li className='nav__list-item'>
             <a
-              href='#skills'
+              href='#blogs'
               onClick={toggleNavList}
               className='link link--nav'
             >
-              Skills
+              Blogs
             </a>
           </li>
         ) : null}
@@ -56,14 +54,7 @@ const Navbar = () => {
         ) : null}
       </ul>
 
-      <button
-        type='button'
-        onClick={toggleTheme}
-        className='btn btn--icon nav__theme'
-        aria-label='toggle theme'
-      >
-        {themeName === 'dark' ? <WbSunnyRoundedIcon /> : <Brightness2Icon />}
-      </button>
+      {/* theme toggle removed for minimal light-only theme */}
 
       <button
         type='button'

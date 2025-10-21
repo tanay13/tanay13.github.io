@@ -6,18 +6,14 @@ const ThemeContext = createContext()
 const ThemeProvider = ({ children }) => {
   const [themeName, setThemeName] = useState('light')
 
+  // Force light theme for a consistent minimal style
   useEffect(() => {
-    const darkMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    setThemeName(darkMediaQuery.matches ? 'dark' : 'light')
-    darkMediaQuery.addEventListener('change', (e) => {
-      setThemeName(e.matches ? 'dark' : 'light')
-    });
+    setThemeName('light')
   }, [])
 
   const toggleTheme = () => {
-    const name = themeName === 'dark' ? 'light' : 'dark'
-    localStorage.setItem('themeName', name)
-    setThemeName(name)
+    // No-op to keep light theme; maintained for context API shape compatibility
+    setThemeName('light')
   }
 
   return (

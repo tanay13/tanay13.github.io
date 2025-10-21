@@ -16,23 +16,18 @@ const About = () => {
       )}
 
       {role && <h2 className='about__role'>A {role}.</h2>}
-      <p className='about__desc'>
-        Hi, I am Tanay !
+      <div className='about__desc'>
         <p>
-          {' '}
-          I am a computer science undergraduate from VIT, Vellore. I am a self
-          taught developer, and like solving real world issues through my work.
-          I started exploring web development in my first year of college and
-          since then my love for the field is growing day by day. I am a Full
-          Stack developer and currently exploring DevOps. I love working with
-          the APIs and mostly prefer to work as a backend developer . I often
-          try to contribute to open source projects as well, I have made my
-          contributions in many projects and worked on technologies like
-          TypeScript, NestJS,NodeJS etc. Apart from this I am an ardent chess
-          lover and can be often found on{' '}
-          <a href='https://www.chess.com/'>Chess.com</a>
+          I&apos;m a computer scientist who loves diving into the fundamentals: <b>systems</b>, <b>data</b>, and the <b>math</b> that ties them together. 
         </p>
-      </p>
+        <p>
+          I care more about understanding how things work than stacking frameworks, and I&apos;m currently exploring the world of <b>distributed systems</b>, <b>databases</b>, and the ideas that shape them.
+        </p>
+        <p>
+          Apart from this, I am an ardent chess lover and can be often found on{' '}
+          <a className='about__link' href='https://www.chess.com/' target='_blank' rel='noreferrer'>Chess.com</a>.
+        </p>
+      </div>
 
       <div className='about__contact center'>
         {resume && (

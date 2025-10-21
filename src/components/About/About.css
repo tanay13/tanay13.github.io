@@ -1,6 +1,7 @@
 .about {
   flex-direction: column;
   margin-top: 3em;
+  text-align: center;
 }
 
 .about__name {
@@ -12,13 +13,36 @@
 }
 
 .about__desc {
-  font-size: 1rem;
-  max-width: 600px;
+  font-size: 1.05rem;
+  max-width: 680px;
+  line-height: 1.8;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about__desc,
 .about__contact {
   margin-top: 2.4em;
+}
+
+.about__desc p {
+  margin: 0.75em 0;
+}
+
+.about__desc b {
+  color: var(--clr-primary);
+  font-weight: 600;
+}
+
+.about__link {
+  color: var(--clr-primary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.about__link:hover {
+  text-decoration-thickness: 2px;
 }
 
 .about .link--icon {
