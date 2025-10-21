@@ -18,7 +18,7 @@ const About = () => {
       {role && <h2 className='about__role'>A {role}.</h2>}
       <div className='about__desc'>
         <p>
-          I&apos;m a computer scientist who loves diving into the fundamentals: <b>systems</b>, <b>data</b>, and the <b>math</b> that ties them together. 
+          I&apos;m a computer scientist who loves diving into the fundamentals: <b>systems</b>, <b>data</b>, and the <b>math</b> that ties them together.
         </p>
         <p>
           I care more about understanding how things work than stacking frameworks, and I&apos;m currently exploring the world of <b>distributed systems</b>, <b>databases</b>, and the ideas that shape them.
@@ -45,6 +45,8 @@ const About = () => {
                 href={social.github}
                 aria-label='github'
                 className='link link--icon'
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <GitHubIcon />
               </a>
@@ -55,6 +57,8 @@ const About = () => {
                 href={social.linkedin}
                 aria-label='linkedin'
                 className='link link--icon'
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <LinkedInIcon />
               </a>
@@ -64,6 +68,8 @@ const About = () => {
                 href={social.twitter}
                 aria-label='twitter'
                 className='link link--icon'
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <TwitterIcon />
               </a>
