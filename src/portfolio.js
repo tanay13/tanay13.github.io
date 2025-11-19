@@ -9,7 +9,7 @@ const about = {
   name: 'Tanay Raj',
   role: 'Backend Developer | Systems Enthusiast',
   resume:
-    'https://drive.google.com/file/d/1nThWhmMHJQC9VvTW9dOjjYUZd9zGyuqI/view?usp=sharing',
+    'https://drive.google.com/file/d/1VNaB1s0p_dNBzr_nyk1x7DJZN69lWSWL/view?usp=sharing',
   social: {
     linkedin: 'https://linkedin.com/in/tanay-raj',
     github: 'https://github.com/tanay13',
