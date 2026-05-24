@@ -37,7 +37,12 @@ export const blogPost = {
     <p>The journey never ends. There's always something new to learn, whether it's a new framework, a different programming language, or a better way to solve problems. That's what makes this field so exciting.</p>
   `,
   tags: ['full stack', 'web development', 'career', 'learning', 'react', 'node.js'],
-  readTime: '7 min read'
+  readTime: '7 min read',
+  // Optional: slugs or full URLs from portfolio.js. Omit to link all other posts.
+  related: [
+    'getting-started-web-development',
+    'https://baremetalbytes.hashnode.dev/understanding-simd-guide-to-vectorized-computing',
+  ],
 }
 
 export default blogPost

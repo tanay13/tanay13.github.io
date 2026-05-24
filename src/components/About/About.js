@@ -21,7 +21,7 @@ const About = () => {
           I&apos;m a computer scientist who loves diving into the fundamentals: <b>systems</b>, <b>data</b>, and the <b>math</b> that ties them together.
         </p>
         <p>
-          I care more about understanding how things work than stacking frameworks, and I&apos;m currently exploring the world of <b>distributed systems</b>, <b>databases</b>, and the ideas that shape them.
+          I care more about understanding how things work than stacking frameworks, and I&apos;m currently exploring the <b>distributed systems</b>, <b>databases</b>, and the ideas that shape them.
         </p>
         <p>
           Apart from this, I am an ardent chess lover and can be often found on{' '}

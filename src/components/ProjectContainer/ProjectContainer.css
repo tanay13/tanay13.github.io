@@ -2,14 +2,14 @@
   padding: 2rem;
   background: var(--clr-bg-alt);
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 12px rgba(26, 24, 20, 0.06);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-align: center;
 }
 
 .project:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 20px rgba(26, 24, 20, 0.1);
 }
 
 .project h3 {
@@ -52,7 +52,7 @@
 }
 
 .project .link--icon {
-  color: var(--clr-primary);
+  color: var(--clr-accent);
   font-size: 1.2rem;
   transition: opacity 0.2s ease;
 }

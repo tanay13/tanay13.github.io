@@ -1,27 +1,27 @@
+:root,
+.light,
+.dark {
+  --clr-bg: #f5f0e8;
+  --clr-bg-alt: #ebe4d8;
+  --clr-fg: #1a1814;
+  --clr-fg-alt: #5c574f;
+  --clr-primary: #1a1814;
+  --clr-accent: #b42318;
+  --clr-hero: #12110f;
+  --clr-hero-fg: #f5f0e8;
+  --clr-border: rgba(26, 24, 20, 0.12);
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --blog-content-width: min(1100px, 94vw);
+  --shadow: none;
+}
+
 .app {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   color: var(--clr-fg);
   background-color: var(--clr-bg);
-}
-
-.light {
-  --clr-bg: #ffffff;
-  --clr-bg-alt: #fafafa;
-  --clr-fg: #1f2937; /* gray-800 */
-  --clr-fg-alt: #6b7280; /* gray-500 */
-  --clr-primary: #111827; /* near-black for minimal links */
-  --shadow: none;
-}
-
-/* dark theme kept for compatibility but identical to light for minimal look */
-.dark {
-  --clr-bg: #ffffff;
-  --clr-bg-alt: #fafafa;
-  --clr-fg: #1f2937;
-  --clr-fg-alt: #6b7280;
-  --clr-primary: #111827;
-  --shadow: none;
+  min-height: 100vh;
 }
 
 main {
@@ -53,6 +53,7 @@ main {
 .link:hover,
 .link:focus {
   text-decoration: underline;
+  color: var(--clr-accent);
 }
 
 .link--nav {

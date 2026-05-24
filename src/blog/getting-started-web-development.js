@@ -38,7 +38,8 @@ export const blogPost = {
     <p>Web development is a journey of continuous learning. Start with the basics, practice regularly, and don't be afraid to experiment. The web development community is welcoming and full of resources to help you grow.</p>
   `,
   tags: ['web development', 'html', 'css', 'javascript', 'beginner'],
-  readTime: '5 min read'
+  readTime: '5 min read',
+  // Omit `related` to auto-link every other entry from portfolio.js (incl. external).
 }
 
 export default blogPost

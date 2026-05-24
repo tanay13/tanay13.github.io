@@ -1,65 +1,89 @@
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate, Link } from 'react-router-dom'
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
+import RelatedArticles from './RelatedArticles'
+import { blogs } from '../../portfolio'
 import './BlogPost.css'
 
-// Import blog posts
 import gettingStartedPost from '../../blog/getting-started-web-development'
 import fullStackJourneyPost from '../../blog/full-stack-developer-journey'
+import { formatBlogDate, getRelatedBlogs } from '../../utils/blogs'
 
 const blogPosts = {
   'getting-started-web-development': gettingStartedPost,
-  'full-stack-developer-journey': fullStackJourneyPost
+  'full-stack-developer-journey': fullStackJourneyPost,
 }
 
 const BlogPost = () => {
   const { slug } = useParams()
   const navigate = useNavigate()
-  
+
   const post = blogPosts[slug]
-  
+
   if (!post) {
     return (
-      <div className="blog-post-not-found">
-        <h1>Blog Post Not Found</h1>
-        <p>The blog post you&apos;re looking for doesn&apos;t exist.</p>
-        <button type="button" onClick={() => navigate('/')} className="btn btn--outline">
-          Back to Home
-        </button>
+      <div className="blog-post">
+        <Header />
+        <div className="blog-post-not-found">
+          <h1>Post not found</h1>
+          <p>The article you&apos;re looking for doesn&apos;t exist.</p>
+          <Link to="/blogs" className="btn btn--outline">
+            Back to blog
+          </Link>
+        </div>
+        <Footer />
       </div>
     )
   }
 
+  const tagLabel = post.tags?.slice(0, 2).join(' · ') || 'Article'
+  const relatedArticles = getRelatedBlogs(blogs, slug, post.related)
+
   return (
     <div className="blog-post">
+      <Header />
+
+      <header className="blog-post__hero">
+        <div className="blog-post__hero-inner">
+          <span className="blog-post__tag">{tagLabel}</span>
+          <h1 className="blog-post__title">{post.title}</h1>
+          <p className="blog-post__meta">
+            by {post.author} · {formatBlogDate(post.date)} · {post.readTime}
+          </p>
+        </div>
+      </header>
+
       <div className="blog-post__container">
-        <button 
-          type="button"
-          onClick={() => navigate('/')} 
-          className="blog-post__back-btn"
-        >
-          ← Back to Portfolio
-        </button>
-        
         <article className="blog-post__content">
-          <header className="blog-post__header">
-            <h1 className="blog-post__title">{post.title}</h1>
-            <div className="blog-post__meta">
-              <span className="blog-post__author">By {post.author}</span>
-              <span className="blog-post__date">{post.date}</span>
-              <span className="blog-post__read-time">{post.readTime}</span>
-            </div>
-            <div className="blog-post__tags">
-              {post.tags.map((tag) => (
-                <span key={tag} className="blog-post__tag">{tag}</span>
-              ))}
-            </div>
-          </header>
-          
-          <div 
+          <div
             className="blog-post__body"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
         </article>
+
+        <footer className="blog-post__footer">
+          {post.tags?.length ? (
+            <div className="blog-post__tags">
+              {post.tags.map((tag) => (
+                <span key={tag} className="blog-post__tag-pill">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          ) : null}
+          <button
+            type="button"
+            onClick={() => navigate('/blogs')}
+            className="blog-post__back-btn"
+          >
+            ← All posts
+          </button>
+        </footer>
+
+        <RelatedArticles articles={relatedArticles} />
       </div>
+
+      <Footer />
     </div>
   )
 }

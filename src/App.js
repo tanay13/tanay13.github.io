@@ -6,6 +6,7 @@ import About from './components/About/About'
 import Projects from './components/Projects/Projects'
 import Blogs from './components/Blogs/Blogs'
 import BlogPost from './components/BlogPost/BlogPost'
+import BlogsPage from './pages/BlogsPage/BlogsPage'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
@@ -15,7 +16,7 @@ const App = () => {
   const [{ themeName }] = useContext(ThemeContext)
 
   const Portfolio = () => (
-    <div id='top' className={`${themeName} app`}>
+    <>
       <Header />
       <main>
         <About />
@@ -25,15 +26,18 @@ const App = () => {
       </main>
       <ScrollToTop />
       <Footer />
-    </div>
+    </>
   )
 
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Portfolio />} />
-        <Route path="/blog/:slug" element={<BlogPost />} />
-      </Routes>
+      <div id='top' className={`${themeName} app`}>
+        <Routes>
+          <Route path="/" element={<Portfolio />} />
+          <Route path="/blogs" element={<BlogsPage />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
+        </Routes>
+      </div>
     </Router>
   )
 }

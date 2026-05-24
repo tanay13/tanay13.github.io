@@ -5,7 +5,8 @@
 }
 
 .about__name {
-  color: var(--clr-primary);
+  color: var(--clr-fg);
+  font-family: var(--font-serif);
 }
 
 .about__role {
@@ -30,12 +31,12 @@
 }
 
 .about__desc b {
-  color: var(--clr-primary);
+  color: var(--clr-fg);
   font-weight: 600;
 }
 
 .about__link {
-  color: var(--clr-primary);
+  color: var(--clr-accent);
   font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 3px;

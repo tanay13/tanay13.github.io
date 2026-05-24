@@ -9,7 +9,7 @@ const about = {
   name: 'Tanay Raj',
   role: 'Backend Developer | Systems Enthusiast',
   resume:
-    'https://drive.google.com/file/d/1VNaB1s0p_dNBzr_nyk1x7DJZN69lWSWL/view?usp=sharing',
+  "https://drive.google.com/file/d/1347x14s1SVlKtP6TU5aB_Y-b0HAE2vCY/view?usp=sharing",
   social: {
     linkedin: 'https://linkedin.com/in/tanay-raj',
     github: 'https://github.com/tanay13',
@@ -33,31 +33,44 @@ const projects = [
     sourceCode: 'https://github.com/tanay13/codetropy',
   },
   {
-    name: 'Synced-up',
+    name: 'Raven',
     description:
-      ' A platform to watch youtube or custom uploaded videos in sync with others. Feature to create a room and invite others in to enjoy waatching videos together without any disturbance.',
-    stack: ['NodeJs', 'MongoDB', 'Socket Programming'],
-    sourceCode: 'https://github.com/tanay13/synced-up',
+      'A clean, efficient C++ chess engine built from scratch.',
+    stack: ['C++', 'Bit Manipulation', 'Algorithms', 'AI'],
+    sourceCode: 'https://github.com/tanay13/raven',
   }
 ]
 
 const blogs = [
-
   // {
   //   title: 'Getting Started with Web Development',
-  //   description: 'A beginner-friendly guide to web development covering HTML, CSS, and JavaScript fundamentals.',
+  //   description:
+  //     'A beginner-friendly guide to web development covering HTML, CSS, and JavaScript fundamentals.',
   //   url: '/blog/getting-started-web-development',
   //   date: '2024-01-20',
   //   platform: 'Personal Blog',
-  //   isExternal: false
+  //   isExternal: false,
+  //   featured: false,
+  // },
+  // {
+  //   title: 'My Journey as a Full Stack Developer',
+  //   description:
+  //     'Reflections on learning frontend and backend, the challenges along the way, and advice for aspiring developers.',
+  //   url: '/blog/full-stack-developer-journey',
+  //   date: '2024-01-18',
+  //   platform: 'Personal Blog',
+  //   isExternal: false,
+  //   featured: false,
   // },
   {
     title: 'Understanding SIMD: Guide to Vectorized Computing',
-    description: 'A guide to SIMD (Single Instruction, Multiple Data) programming for faster computation.',
+    description:
+      'A guide to SIMD (Single Instruction, Multiple Data) programming for faster computation.',
     url: 'https://baremetalbytes.hashnode.dev/understanding-simd-guide-to-vectorized-computing',
-    date: '2024-03-04',
+    date: '2025-03-24',
     platform: 'Hashnode',
-    isExternal: true
+    isExternal: true,
+    featured: true,
   },
 ]
 

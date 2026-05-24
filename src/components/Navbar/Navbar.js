@@ -1,12 +1,11 @@
-import { useContext, useState } from 'react'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import MenuIcon from '@material-ui/icons/Menu'
 import CloseIcon from '@material-ui/icons/Close'
-import { ThemeContext } from '../../contexts/theme'
 import { projects, blogs, contact } from '../../portfolio'
 import './Navbar.css'
 
 const Navbar = () => {
-  const [{ themeName }] = useContext(ThemeContext)
   const [showNavList, setShowNavList] = useState(false)
 
   const toggleNavList = () => setShowNavList(!showNavList)
@@ -20,7 +19,7 @@ const Navbar = () => {
         {projects.length ? (
           <li className='nav__list-item'>
             <a
-              href='#projects'
+              href='/#projects'
               onClick={toggleNavList}
               className='link link--nav'
             >
@@ -31,20 +30,20 @@ const Navbar = () => {
 
         {blogs.length ? (
           <li className='nav__list-item'>
-            <a
-              href='#blogs'
+            <Link
+              to='/blogs'
               onClick={toggleNavList}
               className='link link--nav'
             >
               Blogs
-            </a>
+            </Link>
           </li>
         ) : null}
 
         {contact.email ? (
           <li className='nav__list-item'>
             <a
-              href='#contact'
+              href='/#contact'
               onClick={toggleNavList}
               className='link link--nav'
             >
