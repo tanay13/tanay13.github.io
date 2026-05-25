@@ -5,6 +5,10 @@
   background-color: transparent;
 }
 
+.scroll-top__btn {
+  color: var(--clr-fg);
+}
+
 @media (max-width: 900px) {
   .scroll-top {
     display: none;

@@ -1,5 +1,6 @@
 import { useContext } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import ScrollOnNavigate from './components/ScrollToTop/ScrollOnNavigate'
 import { ThemeContext } from './contexts/theme'
 import Header from './components/Header/Header'
 import About from './components/About/About'
@@ -31,6 +32,7 @@ const App = () => {
 
   return (
     <Router>
+      <ScrollOnNavigate />
       <div id='top' className={`${themeName} app`}>
         <Routes>
           <Route path="/" element={<Portfolio />} />
