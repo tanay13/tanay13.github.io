@@ -45,7 +45,6 @@ const BlogPost = () => {
       startpos: 'Starting position — ranks 1-2 and 7-8 occupied',
     }
 
-    // Build the 8x8 chess grid
     grid.innerHTML = ''
     for (let rank = 7; rank >= 0; rank -= 1) {
       for (let file = 0; file < 8; file += 1) {
