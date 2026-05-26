@@ -38,7 +38,7 @@ const resolveBlogUrl = (slugOrUrl) =>
 export const getRelatedBlogs = (allBlogs, currentSlug, related) => {
   const currentUrl = blogPathFromSlug(currentSlug)
 
-  if (related?.length) {
+  if (related !== undefined && related !== null) {
     return related
       .map((slugOrUrl) =>
         allBlogs.find((blog) => blog.url === resolveBlogUrl(slugOrUrl))

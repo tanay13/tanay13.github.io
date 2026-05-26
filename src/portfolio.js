@@ -8,8 +8,8 @@ const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Tanay Raj',
   role: 'Backend Developer | Systems Enthusiast',
-  resume:
-  "https://drive.google.com/file/d/1347x14s1SVlKtP6TU5aB_Y-b0HAE2vCY/view?usp=sharing",
+  // resume:
+  // "https://drive.google.com/file/d/1347x14s1SVlKtP6TU5aB_Y-b0HAE2vCY/view?usp=sharing",
   social: {
     linkedin: 'https://linkedin.com/in/tanay-raj',
     github: 'https://github.com/tanay13',
@@ -62,6 +62,16 @@ const blogs = [
   //   isExternal: false,
   //   featured: false,
   // },
+  {
+    title: 'Building Raven: Notes from Writing a Chess Engine',
+    description:
+      'A personal learning log detailing the challenges, bitboards, alpha-beta pruning, move ordering, and transposition tables when building the Raven chess engine from scratch.',
+    url: '/blog/chess-engine',
+    date: '2025-05-26',
+    platform: 'Personal Blog',
+    isExternal: false,
+    featured: true,
+  },
   {
     title: 'Understanding SIMD: Guide to Vectorized Computing',
     description:

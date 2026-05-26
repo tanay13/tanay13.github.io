@@ -39,10 +39,6 @@ export const blogPost = {
   tags: ['full stack', 'web development', 'career', 'learning', 'react', 'node.js'],
   readTime: '7 min read',
   // Optional: slugs or full URLs from portfolio.js. Omit to link all other posts.
-  related: [
-    'getting-started-web-development',
-    'https://baremetalbytes.hashnode.dev/understanding-simd-guide-to-vectorized-computing',
-  ],
 }
 
 export default blogPost
