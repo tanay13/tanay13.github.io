@@ -42,26 +42,6 @@ const projects = [
 ]
 
 const blogs = [
-  // {
-  //   title: 'Getting Started with Web Development',
-  //   description:
-  //     'A beginner-friendly guide to web development covering HTML, CSS, and JavaScript fundamentals.',
-  //   url: '/blog/getting-started-web-development',
-  //   date: '2024-01-20',
-  //   platform: 'Personal Blog',
-  //   isExternal: false,
-  //   featured: false,
-  // },
-  // {
-  //   title: 'My Journey as a Full Stack Developer',
-  //   description:
-  //     'Reflections on learning frontend and backend, the challenges along the way, and advice for aspiring developers.',
-  //   url: '/blog/full-stack-developer-journey',
-  //   date: '2024-01-18',
-  //   platform: 'Personal Blog',
-  //   isExternal: false,
-  //   featured: false,
-  // },
   {
     title: 'Building Raven: Notes from Writing a Chess Engine',
     description:
@@ -85,7 +65,6 @@ const blogs = [
 ]
 
 const contact = {
-  // email is optional - if left empty Contact section won't show up
   email: 'tanay.raj76@gmail.com',
 }
 
